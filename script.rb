@@ -54,7 +54,7 @@ puts "---------------------------------"
 
 commonArr = wordfrequency.sort_by {|word,count| count}.reverse
 
-for i in 0...10 word, count = commonArr[i]
+commonArr[0...10].each do |word, count|
     puts "Word: '#{word}' Frequency: #{count}"
   end
 
@@ -63,4 +63,4 @@ puts "---------------------------------"
 # refactoring choices and any additional features you implemented
 #Initialized the wordfrequency hash using Hash.new(0) to set the default value for missing keys to 0.
 #After counting the frequencies, a loop is used to print each word and its count. for user readability 
-#In the loop, for each word encountered, increment its count in the wordfrequency hash using +=. 
+#In the loop, for each word encountered, it increments count in the wordfrequency hash using +=. 
