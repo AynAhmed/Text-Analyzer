@@ -22,6 +22,20 @@ def count_characters(string)
 end
 
 puts "---------------------------------"
+
+# Function to count the number of paragraphs
+def count_paragraphs(text)
+    # Split the text into paragraphs using one or more consecutive empty lines as the separator
+    paragraphs = text.split(/\n\s*\n+/)
+    paragraphs.length
+  end
+
+  paragraph_count = count_paragraphs($file)
+
+  puts "Number of paragraphs: #{paragraph_count}"
+
+
+puts "---------------------------------"
 characterCount = count_characters($file)
 puts "Number of characters: #{characterCount}"
 
