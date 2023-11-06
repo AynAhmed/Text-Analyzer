@@ -42,8 +42,7 @@ def count_paragraphs(text)
 
 
 puts "---------------------------------"
-characterCount = count_characters($file)
-puts "Number of characters: #{characterCount}"
+
 
 #Identify the most common word in the document and display it along with its frequency
 
