@@ -4,22 +4,28 @@ def read_text_from_file(filename)
 end
 $file = read_text_from_file("sample.txt")
 
-# function counts the number of words 
+# function counts the number of words
 
-def countsByWords(text)
+def counts_By_Words(text)
   text.split.length
 end
 
-wordCount = countsByWords($file )
 
-puts "Number of words: #{wordCount}"
+puts "Number of words: #{counts_By_Words($file)}"
 
+
+puts "---------------------------------"
 
 # function counts the number of characters
-def count_characters(string)
-    string = string.gsub(/\s+/, '')  # Remove all whitespace characters (spaces, tabs, newlines, etc.)
-    string.length
+def count_characters(text)
+    text = text.gsub(/\s+/, '')  # Remove all whitespace characters (spaces, tabs, newlines, etc.)
+    text.length
 end
+
+# charCount = count_characters($file)
+
+puts "Number of characters: #{count_characters($file)}"
+
 
 puts "---------------------------------"
 
